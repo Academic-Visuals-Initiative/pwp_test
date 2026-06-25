@@ -1,0 +1,25 @@
+:root {
+  --surface: #0f1111;
+  --surface-variant: #171a1a;
+  --on-surface: #e5e7eb;
+  --on-surface-muted: #9ca3af;
+  --primary: #94bbf7;
+  --secondary: #a3c978;
+  --outline: rgba(255, 255, 255, 0.08);
+  --outline-hover: rgba(255, 255, 255, 0.16);
+  --transition-speed: 0.3s;
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Roboto Flex', sans-serif;
+  --header-height: 70px;
+}
+
+[data-theme="light"] {
+  --surface: #fafafa;
+  --surface-variant: #f1f3f5;
+  --on-surface: #1a1c1e;
+  --on-surface-muted: #64748b;
+  --primary: #1e5088;
+  --secondary: #3b5a1c;
+  --outline: rgba(0, 0, 0, 0.08);
+  --outline-hover: rgba(0, 0, 0, 0.16);
+}

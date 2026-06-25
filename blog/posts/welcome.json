@@ -1,0 +1,492 @@
+{
+   "title":"Welcome to the World of Coffee & Chocolate",
+   "date":"2026-06-23",
+   "hero":{
+      "src":"assets/images/11.jpg",
+      "alt":"Coffee beans and chocolate",
+      "tagline":"A journey through **flavor**, *craft*, and passion",
+      "taglineSize":"xl",
+      "caption":"Freshly roasted coffee beans alongside artisan chocolate",
+      "credit":"Photo: Unsplash",
+      "align":"center"
+   },
+   "blocks":[
+      {
+         "type":"epigraph",
+         "text":"Coffee and chocolate are two of the world's most beloved indulgences — and they share more in common than you might think.",
+         "attribution":"The Flavor Almanac"
+      },
+      {
+         "type":"callout",
+         "style":"info",
+         "text":"Welcome to **Dr. Coffee Bean** — your guide to the art and science of coffee and chocolate. Expect tasting notes, brewing guides, and chocolate-making tips."
+      },
+      {
+         "type":"callout",
+         "style":"tip",
+         "text":"**Pro tip:** Store your coffee beans in an airtight container away from sunlight. Same goes for chocolate — cool, dark, and dry is the golden rule."
+      },
+      {
+         "type":"callout",
+         "style":"warning",
+         "text":"**Watch out:** Never store coffee or chocolate in the fridge — condensation ruins both! A cool pantry is ideal."
+      },
+      {
+         "type":"callout",
+         "style":"error",
+         "text":"**Common mistake:** Grinding coffee beans too far in advance. Always grind just before brewing for the freshest cup."
+      },
+      {
+         "type":"accordion",
+         "summary":"Why coffee and chocolate?",
+         "text":"Coffee and chocolate share a surprising amount of chemistry. Both contain **theobromine** and **caffeine**, both undergo **fermentation** as part of their processing, and both develop complex flavor profiles through **roasting**. It's no wonder they pair so beautifully together."
+      },
+      {
+         "type":"accordion",
+         "summary":"How we rate flavor",
+         "text":"We use a 100-point tasting system inspired by specialty coffee scoring. A score of **90+** is exceptional, **85-89** is excellent, and **80-84** is very good. We apply the same rigor to single-origin chocolates.",
+         "open":true
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"The Flavor Connection"
+      },
+      {
+         "type":"paragraph",
+         "content":"Coffee and chocolate begin their journeys in remarkably similar ways. Both start as seeds or beans inside fruit — the coffee cherry and the cacao pod. Both undergo fermentation to develop their signature flavors (fn:1). And both are roasted to transform raw, vegetal notes into the rich, complex profiles we love."
+      },
+      {
+         "type":"paragraph",
+         "content":"The terroir — soil, altitude, climate — dramatically affects the final taste of both coffee and chocolate (fn:2). A single-origin bar from Madagascar tastes entirely different from one grown in Peru, just as an Ethiopian Yirgacheffe tastes nothing like a Brazilian Santos."
+      },
+      {
+         "type":"code",
+         "language":"json",
+         "filename":"flavor-profile.json",
+         "code":"{\n  \"origin\": \"Ethiopia, Yirgacheffe\",\n  \"type\": \"Coffee — Washed Process\",\n  \"score\": 91,\n  \"notes\": [\"jasmine\", \"blueberry\", \"honey\"],\n  \"pairing\": \"Dark chocolate — 72%\"\n}",
+         "showLineNumbers":true,
+         "highlightLines":[
+            1,
+            7
+         ]
+      },
+      {
+         "type":"pullquote",
+         "layout":"right",
+         "text":"Coffee without chocolate is like a morning without sunshine. Both are essential to the good life.",
+         "attribution":"Dr. Coffee Bean"
+      },
+      {
+         "type":"list",
+         "style":"bullet",
+         "items":[
+            "**Arabica** vs **Robusta** — flavor differences",
+            "[x] Try a single-origin pour-over",
+            "[ ] Visit a local roastery",
+            "  Ask about roast dates",
+            "    Freshness matters more than origin",
+            "**Chocolate** percentages explained"
+         ]
+      },
+      {
+         "type":"list",
+         "style":"number",
+         "items":[
+            "Taste the coffee black first",
+            "Add a small sip of water",
+            "  Notice the acidity",
+            "  Evaluate the body",
+            "    Mouthfeel is key",
+            "Try the chocolate pairing"
+         ]
+      },
+      {
+         "type":"spacer",
+         "height":20
+      },
+      {
+         "type":"divider",
+         "style":"double"
+      },
+      {
+         "type":"spacer",
+         "height":40
+      },
+      {
+         "type":"audio",
+         "title":"Pour-over brewing guide",
+         "src":"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+         "caption":"Listen to the perfect pour-over technique in action."
+      },
+      {
+         "type":"divider",
+         "style":"dashed"
+      },
+      {
+         "type":"heading",
+         "level":3,
+         "text":"Tasting Notes & Terminology"
+      },
+      {
+         "type":"math",
+         "formula":"T = \\frac{B \\times S}{G} + A",
+         "displayMode":true,
+         "label":"1",
+         "caption":"Flavor intensity formula — a playful model for thinking about brew strength."
+      },
+      {
+         "type":"math",
+         "formula":"E = mc^2",
+         "displayMode":true,
+         "align":"left",
+         "label":"eq. A.1"
+      },
+      {
+         "type":"image",
+         "src":"assets/images/3.jpg",
+         "layout":"center",
+         "size":"large",
+         "alt":"Coffee pour-over",
+         "caption":"The art of the perfect pour-over",
+         "credit":"Photo: Unsplash",
+         "lightbox":true,
+         "border":true
+      },
+      {
+         "type":"paragraph",
+         "content":"When tasting coffee or chocolate, use all your senses. ~~Ignore the aroma~~ No — always start with the smell! ++Swirl the cup++ to release volatile compounds. ||Spoiler alert: good chocolate should snap cleanly|| (fn:3). H~2~O temperature matters — 96^°^C is ideal for pour-over."
+      },
+      {
+         "type":"image",
+         "src":"assets/images/4.jpg",
+         "layout":"left",
+         "size":"medium",
+         "alt":"Chocolate tasting",
+         "caption":"Artisan chocolate selection",
+         "text":"This **left** layout pairs an image with tasting notes. Let the chocolate melt on your tongue — *don't chew it*. Note the three phases: the *melt*, the *release*, and the *finish* (fn:3)."
+      },
+      {
+         "type":"paragraph",
+         "content":"The finish (or aftertaste) is a critical quality indicator. A long, pleasant finish with evolving notes is the hallmark of fine single-origin chocolate (fn:4). For coffee, the finish should be clean and lingering, never bitter or ashy."
+      },
+      {
+         "type":"image",
+         "src":"assets/images/5.jpg",
+         "layout":"full",
+         "alt":"Coffee roasting",
+         "caption":"Coffee roasting in progress — the beans transform from green to gold",
+         "border":true
+      },
+      {
+         "type":"video",
+         "url":"https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+         "caption":"A visual guide to coffee roasting profiles"
+      },
+      {
+         "type":"link",
+         "text":"Explore our full flavor library →",
+         "url":"https://example.com/flavors"
+      },
+      {
+         "type":"button",
+         "text":"Start Your Tasting Journey",
+         "url":"https://example.com",
+         "align":"center",
+         "variant":"primary"
+      },
+      {
+         "type":"button",
+         "text":"Download Flavor Wheel",
+         "url":"https://github.com",
+         "align":"right",
+         "variant":"outline"
+      },
+      {
+         "type":"gallery",
+         "layout":"grid",
+         "columns":3,
+         "ratio":"square",
+         "images":[
+            {
+               "src":"assets/images/6.jpg",
+               "alt":"Coffee beans",
+               "caption":"Arabica"
+            },
+            {
+               "src":"assets/images/7.jpg",
+               "alt":"Chocolate bar",
+               "caption":"Single Origin"
+            },
+            {
+               "src":"assets/images/8.jpg",
+               "alt":"Roasting",
+               "caption":"Roast Profile"
+            }
+         ]
+      },
+      {
+         "type":"gallery",
+         "layout":"masonry",
+         "ratio":"portrait",
+         "images":[
+            {
+               "src":"assets/images/9.jpg",
+               "alt":"Pour-over setup",
+               "credit":"Brew Guide"
+            },
+            {
+               "src":"assets/images/7.jpg",
+               "alt":"Chocolate detail"
+            }
+         ]
+      },
+      {
+         "type":"gallery",
+         "layout":"carousel",
+         "images":[
+            {
+               "src":"assets/images/6.jpg",
+               "alt":"Beans 1"
+            },
+            {
+               "src":"assets/images/8.jpg",
+               "alt":"Roasting 2"
+            },
+            {
+               "src":"assets/images/7.jpg",
+               "alt":"Chocolate 3"
+            },
+            {
+               "src":"assets/images/9.jpg",
+               "alt":"Brew 4"
+            }
+         ]
+      },
+      {
+         "type":"columns",
+         "count":2,
+         "columns":[
+            {
+               "blocks":[
+                  {
+                     "type":"heading",
+                     "level":3,
+                     "text":"Coffee Notes"
+                  },
+                  {
+                     "type":"text",
+                     "text":"**Tasting terms** to know: acidity, body, sweetness, bitterness, and finish."
+                  },
+                  {
+                     "type":"list",
+                     "items":[
+                        "Floral",
+                        "Fruity",
+                        "  Stone fruit",
+                        "  Citrus",
+                        "Nutty",
+                        "Chocolatey"
+                     ]
+                  }
+               ]
+            },
+            {
+               "blocks":[
+                  {
+                     "type":"heading",
+                     "level":3,
+                     "text":"Chocolate Notes"
+                  },
+                  {
+                     "type":"text",
+                     "text":"**Flavor descriptors** for craft chocolate: fruity, nutty, earthy, floral."
+                  },
+                  {
+                     "type":"button",
+                     "text":"Taste Guide",
+                     "url":"https://example.com",
+                     "variant":"outline"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "type":"columns",
+         "count":3,
+         "columns":[
+            {
+               "blocks":[
+                  {
+                     "type":"text",
+                     "text":"**Bean** origin matters."
+                  }
+               ]
+            },
+            {
+               "blocks":[
+                  {
+                     "type":"text",
+                     "text":"**Roast** level defines character."
+                  }
+               ]
+            },
+            {
+               "blocks":[
+                  {
+                     "type":"text",
+                     "text":"**Brew** method extracts flavor."
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"Pairing & Appreciation"
+      },
+      {
+         "type":"blockquote",
+         "text":"Coffee and chocolate are not just foods — they are experiences that connect us to faraway places, the hands that grew them, and the traditions that perfected them.",
+         "attribution":"Dr. Coffee Bean, *The Art of Pairing*",
+         "citeUrl":"https://example.com"
+      },
+      {
+         "type":"code",
+         "language":"javascript",
+         "filename":"pairing.js",
+         "code":"function suggestPairing(coffeeNotes, chocolatePercent) {\n  // Match flavor profiles\n  if (coffeeNotes.includes('fruity')) {\n    return 'Pair with 70-80% dark chocolate';\n  }\n  return 'Try milk chocolate for nutty coffees';\n}",
+         "showLineNumbers":true,
+         "highlightLines":[
+            1,
+            2
+         ]
+      },
+      {
+         "type":"image",
+         "src":"assets/images/10.jpg",
+         "layout":"right",
+         "size":"small",
+         "alt":"Coffee beans close-up",
+         "text":"A **right**-aligned image showing the beautiful detail of freshly roasted beans. Notice the **oil** on the surface — a sign of a dark roast."
+      },
+      {
+         "type":"paragraph",
+         "content":"The right pairing can elevate both coffee and chocolate beyond what either achieves alone. Try {this pairing guide|https://example.com} — you'll be amazed at the new flavors that emerge when the two meet on your palate (fn:4)."
+      },
+      {
+         "type":"paragraph",
+         "content":"**The golden rule:** the coffee should be slightly sweeter than the chocolate. Let the chocolate melt first, then take a sip of coffee. The interaction creates new flavor compounds on your tongue (fn:5). This is why chocolate and coffee have been paired for centuries."
+      },
+      {
+         "type":"paragraph",
+         "content":"The finish of a great pairing lingers for minutes. Notes of caramel, red fruit, and nuts emerge and evolve. This is the **halo effect** — where each component makes the other taste better (fn:5). It's not just delicious — it's chemistry."
+      },
+      {
+         "type":"table",
+         "caption":"Table 1: Recommended pairings (cacao percentage guide)",
+         "captionPosition":"bottom",
+         "striped":true,
+         "headers":[
+            "Coffee Origin",
+            "Roast Level",
+            "Chocolate %",
+            "Result"
+         ],
+         "alignments":[
+            "left",
+            "left",
+            "center",
+            "center"
+         ],
+         "rows":[
+            [
+               "**Ethiopia**",
+               "Light",
+               "70%++",
+               "Floral ++"
+            ],
+            [
+               "**Colombia**",
+               "Medium",
+               "60-70%",
+               "Nutty ++"
+            ],
+            [
+               "**Brazil**",
+               "Dark",
+               "50-60%",
+               "Creamy ++"
+            ]
+         ]
+      },
+      {
+         "type":"table",
+         "caption":"Table 2: Brew ratios (coffee to water)",
+         "captionPosition":"top",
+         "headers":[
+            "Method",
+            "Ratio"
+         ],
+         "alignments":[
+            "left",
+            "right"
+         ],
+         "rows":[
+            [
+               "Pour-over",
+               "1:16"
+            ],
+            [
+               "French Press",
+               "1:12"
+            ],
+            [
+               "Espresso",
+               "1:2"
+            ]
+         ]
+      },
+      {
+         "type":"heading",
+         "level":4,
+         "text":"Join the Community"
+      },
+      {
+         "type":"paragraph",
+         "content":"Whether you're a seasoned barista, a chocolate maker, or just beginning to explore the world of craft flavors, there's always something new to discover (fn:1). Follow along for tasting notes, brewing guides, and chocolate-making adventures (fn:2). We're just getting started."
+      },
+      {
+         "type":"paragraph",
+         "content":"Next up: a deep dive into the fermentation process that transforms raw cacao into chocolate, and green coffee beans into the aromatic treasures we grind each morning (fn:4)."
+      },
+      {
+         "type":"paragraph",
+         "content":"Thanks for reading. Now go make yourself a cup of something special, break off a square of single-origin dark chocolate, and savor the moment. You deserve it (fn:5). Welcome to the community."
+      }
+   ],
+   "footnotes":[
+      {
+         "id":"1",
+         "text":"Fermentation is critical for both coffee and chocolate. It breaks down sugars and develops the precursor compounds that roasting transforms into flavor."
+      },
+      {
+         "id":"2",
+         "text":"Single-origin means all beans or cacao come from one geographic region. This preserves the unique flavor profile of that place."
+      },
+      {
+         "id":"3",
+         "text":"A clean snap indicates properly tempered chocolate. If it bends or crumbles, the tempering process was off."
+      },
+      {
+         "id":"4",
+         "text":"The finish of a well-paired coffee and chocolate can last 5-10 minutes, with evolving notes that surprise and delight."
+      },
+      {
+         "id":"5",
+         "text":"The halo effect in food pairing means complementary flavors enhance each other. Coffee and chocolate are a textbook example."
+      }
+   ]
+}

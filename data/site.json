@@ -1,0 +1,45 @@
+{
+   "name":"Dr. Coffee Bean",
+   "title":"Dr. Coffee Bean | Just Hanging Out",
+   "favicon":"assets/images/logo.svg",
+   "google_analytics_id":"",
+   "cv":{
+      "enabled":true,
+      "path":"assets/cv.pdf",
+      "viewer":"pages/cv.html",
+      "external_url":"https://dashboard.emailjs.com/sign-up",
+      "mode":"view",
+      "labels":{
+         "view":"View cv",
+         "download":"Download CV",
+         "external":"My lab"
+      }
+   },
+   "sections":[
+      "hero.json",
+      "about.json",
+      "education.json",
+      "publications.json",
+      "projects.json",
+      "blog/blog.json",
+      "contact.json"
+   ],
+   "footer":{
+      "name":"Dr. Coffee Bean",
+      "tagline":"Just hanging out. \n next line",
+      "links":[
+         {
+            "label":"My Favorite Coffee",
+            "url":""
+         },
+         {
+            "label":"Nap Tips",
+            "url":"https://example.com/"
+         },
+         {
+            "label":"Nap Tips",
+            "url":"https://example.com/"
+         }
+      ]
+   }
+}

@@ -1,0 +1,175 @@
+{
+   "title":"How Acme Corp Reduced Cloud Costs by 63% Using Spot Instances",
+   "date":"2026-06-28",
+   "hero":{
+      "src":"https://picsum.photos/seed/case-hero/1200/500",
+      "alt":"Server racks in a data center",
+      "tagline":"A data-driven migration story with measurable outcomes",
+      "caption":"Acme Corp's primary data center in Portland, Oregon",
+      "credit":"Photo: Picsum",
+      "align":"center"
+   },
+   "blocks":[
+      {
+         "type":"heading",
+         "level":2,
+         "text":"Executive Summary"
+      },
+      {
+         "type":"paragraph",
+         "content":"Acme Corporation, a mid-sized SaaS company serving over 200,000 enterprise customers, faced a critical challenge in early 2025: their AWS bill had grown to $1.8 million per month and showed no signs of slowing (fn:1). This case study examines how a strategic shift to spot instances and reserved capacity planning reduced their cloud expenditure by 63% while maintaining 99.95% uptime."
+      },
+      {
+         "type":"paragraph",
+         "content":"The migration took approximately four months from initial assessment to full rollout. The project involved three engineering teams, two DevOps engineers, and one cloud architect working in close collaboration with AWS solutions architects."
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"The Challenge"
+      },
+      {
+         "type":"blockquote",
+         "text":"We were throwing money at the cloud and hoping it would fix our scaling problems. The truth is we had never taken the time to understand our actual compute utilization patterns.",
+         "attribution":"Sarah Mitchell, CTO of Acme Corp"
+      },
+      {
+         "type":"paragraph",
+         "content":"An initial audit revealed several systemic issues. Over 40% of their EC2 instances were running at less than 15% utilization. Reserved instances were mismatched to actual usage patterns. Development and staging environments ran 24/7 despite only being needed during business hours. And perhaps most critically, there was no automated mechanism for rightsizing instances based on workload demands."
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"The Solution"
+      },
+      {
+         "type":"paragraph",
+         "content":"Our approach combined three strategies. First, we implemented a comprehensive tagging and monitoring system using AWS Cost Explorer and custom CloudWatch dashboards. Second, we designed a spot instance strategy for stateless workloads that could handle interruptions gracefully. Third, we built an automated rightsizing pipeline that recommended instance type changes weekly."
+      },
+      {
+         "type":"code",
+         "language":"python",
+         "filename":"spot-fleet-template.yaml",
+         "code":"Resources:\n  SpotFleet:\n    Type: AWS::EC2::SpotFleet\n    Properties:\n      SpotFleetRequestConfigData:\n        AllocationStrategy: capacityOptimized\n        IamFleetRole: !GetAtt FleetRole.Arn\n        TargetCapacity: 50\n        SpotMaintenanceStrategy: maintain\n        LaunchTemplateConfigs:\n          - LaunchTemplateSpecification:\n              LaunchTemplateId: !Ref WorkerTemplate\n              Version: '1'\n            Overrides:\n              - InstanceType: c6i.large\n                SubnetId: !Ref PrivateSubnetA\n              - InstanceType: c6a.large\n                SubnetId: !Ref PrivateSubnetB",
+         "showLineNumbers":true,
+         "highlightLines":[
+            2,
+            4,
+            7,
+            13,
+            14
+         ]
+      },
+      {
+         "type":"callout",
+         "style":"info",
+         "text":"The spot fleet uses the **capacityOptimized** allocation strategy, which automatically selects instance pools with the highest available capacity, reducing the frequency of interruptions significantly."
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"Key Results"
+      },
+      {
+         "type":"callout",
+         "style":"info",
+         "text":"**Key Results at a Glance:** Monthly cloud spend reduced from $1.8M to $666K (63% reduction). 99.95% uptime maintained. Team productivity improved by 30% through automated rightsizing. Payback period for the project was less than 2 months."
+      },
+      {
+         "type":"table",
+         "caption":"Cost Reduction Breakdown by Category",
+         "captionPosition":"top",
+         "striped":true,
+         "headers":[
+            "Category",
+            "Before",
+            "After",
+            "Savings"
+         ],
+         "alignments":[
+            "left",
+            "right",
+            "right",
+            "right"
+         ],
+         "rows":[
+            [
+               "Compute (EC2)",
+               "$890K",
+               "$245K",
+               "72%"
+            ],
+            [
+               "Storage (EBS + S3)",
+               "$210K",
+               "$142K",
+               "32%"
+            ],
+            [
+               "Data Transfer",
+               "$180K",
+               "$89K",
+               "51%"
+            ],
+            [
+               "Database (RDS)",
+               "$320K",
+               "$118K",
+               "63%"
+            ],
+            [
+               "Other Services",
+               "$200K",
+               "$72K",
+               "64%"
+            ],
+            [
+               "**Total**",
+               "$1,800K",
+               "$666K",
+               "63%"
+            ]
+         ]
+      },
+      {
+         "type":"heading",
+         "level":2,
+         "text":"Lessons Learned"
+      },
+      {
+         "type":"paragraph",
+         "content":"The single most important lesson was that cost optimization is not a one-time project — it is an ongoing practice. Acme Corp now runs weekly cost reviews and has dedicated FinOps team members embedded in each engineering squad (fn:2). The culture shift from provisioning resources liberally to treating cloud spend as a first-class metric was perhaps the most valuable outcome."
+      },
+      {
+         "type":"blockquote",
+         "text":"The best dollar is the one you never spend. Rightsizing before scaling saved us more than any vendor discount ever could.",
+         "attribution":"James Park, Lead DevOps Engineer at Acme Corp",
+         "citeUrl":"https://example.com/interviews/james-park"
+      },
+      {
+         "type":"paragraph",
+         "content":"For organizations considering a similar migration, we recommend starting with a thorough audit and building a business case around the first 30% of savings, which are typically the easiest to achieve. The remaining optimization requires more sophisticated tooling and organizational buy-in (fn:3)."
+      },
+      {
+         "type":"button",
+         "text":"Download the Full Case Study PDF",
+         "url":"https://example.com/case-studies/acme-cloud-costs.pdf",
+         "align":"center",
+         "variant":"primary"
+      }
+   ],
+   "footnotes":[
+      {
+         "id":"1",
+         "text":"All financial figures have been anonymized and rounded for confidentiality. The actual savings percentage and methodology are preserved."
+      },
+      {
+         "id":"2",
+         "text":"FinOps is a combination of finance and DevOps that brings together engineering, finance, and business teams to manage cloud spend."
+      },
+      {
+         "id":"3",
+         "text":"A complete tooling guide and architecture diagram are available in the downloadable PDF version of this case study."
+      }
+   ]
+}
